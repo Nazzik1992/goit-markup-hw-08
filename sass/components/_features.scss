@@ -19,7 +19,8 @@
         }
         @include tablet {
             margin: 15px;
-            width: 354px;
+            width: 100%;
+            max-width: 354px;
         }
         
     }
@@ -54,22 +55,24 @@
 
     &__card {
         display: flex;
-        align-items: center;
         justify-content: center;
-        width: 450px;
-        height: 120px;
         background: #F5F4FA;
         border-radius: 4px;
         margin-bottom: 30px;
-        
+        width: 100%;
+        max-width: 450px;
+        padding-top: 25px;
+        padding-bottom: 25px;
 
-        @include tablet {
-        width: 354px;
-       }
-       @include desktop {
-        width: 270px;
-       }
+         @include tablet {
+            max-width: 354px; 
+         }
+         @include desktop {
+            max-width: 270px;
+         }
+
     }
+  
 }
 
 
