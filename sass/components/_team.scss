@@ -1,0 +1,127 @@
+.team { 
+    background-color: #F5F4FA;
+}
+.team-list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @include desktop {
+        flex-wrap: nowrap;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.team-item{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @include mobile-max {
+        margin-bottom: 30px;
+    }
+
+    @include tablet {
+        margin: 15px;
+    }
+    @include desktop {
+        margin-right: 30px;
+    }
+
+    &__img {
+        display: block;
+    }
+    &__group{
+        width: 450px;
+        padding: 30px 0px;
+        @include tablet {
+            width: 354px;  
+        }
+        @include tablet {
+            width: 270px; 
+        }
+     }
+
+     &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        }
+    
+    &__text {
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            color: var(--secondary-color);
+            margin-bottom: 16px;
+            
+        }
+
+        &:last-child{ 
+            @include mobile-max {
+            margin-bottom: 0px;
+            }
+            @include desktop {
+                margin-right: 0px;
+            }
+        }
+        
+}
+
+
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item{
+        margin-right: 10px;
+    }
+    &__item:last-child{
+        margin-right: 0px;
+    }
+
+
+    &__link{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+    
+    &__card {
+        fill: #AFB1B8;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+    }
+    &__link:hover, &__link:focus{
+        background-color: var(--link-color);
+        color: #ffffff;
+        
+    }
+    &__link:hover &__card{
+        fill: #ffffff;
+    }
+    &__link:focus &__card{
+        fill: #ffffff;
+    }
+
+ 
+    
+    
+}

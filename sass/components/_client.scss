@@ -1,0 +1,70 @@
+.client{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    
+  
+
+}
+.list-client{
+    @include tablet-max {
+    margin: 15px;
+    }
+    @include desktop {
+       margin-right: 30px;
+    }
+       
+     
+   
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 210px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        
+        cursor: pointer;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+            width: 226px;
+        }
+        @include desktop {
+            width: 170px;
+        }
+        }
+    
+
+    &__card {
+        fill: #AFB1B8;
+        transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__link:last-child{
+        margin-right: 0px;
+    }
+    &__link:hover &__card{
+        fill: var(--link-color);
+        }
+    &__link:focus &__card{
+        fill: var(--link-color);
+        }
+    &__link:hover{
+            border-color: var(--link-color);
+        }
+    &__link:hover{
+            border-color: var(--link-color);
+        }
+    &__link:focus{
+            border-color: var(--link-color);
+        }
+}

@@ -1,0 +1,46 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background: #ffffff;
+    color: var(--primary-color);
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.list {
+    list-style: none;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
