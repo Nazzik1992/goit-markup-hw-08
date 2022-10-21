@@ -119,7 +119,7 @@
     <h2 class="title">Наша команда</h2>
      <ul class="team-list list">
         <li class="team-item">
-           <picture class="team-item__img">
+           <picture>
                 <source
                 srcset="
                 ./images/ourteam/ihor-demyanenko-450.jpg 1x,
@@ -141,7 +141,7 @@
                 "
                 media="(min-width: 1200px)"
                 />
-                <img src="./images/ourteam/ihor-demyanenko-270.jpg" alt="photo Ігор Дем'яненко">
+                <img class="team-item__img" src="./images/ourteam/ihor-demyanenko-270.jpg" alt="photo Ігор Дем'яненко">
             </picture>
             <div class="team-item__group">
             <h3 class="team-item__title">Ігор Дем'яненко</h3>
@@ -179,7 +179,7 @@
             </div>
         </li>
         <li class="team-item">
-            <picture class="team-item__img">
+            <picture>
                 <source
                 srcset="
                 ./images/ourteam/olga-repina-450.jpg 1x,
@@ -201,7 +201,7 @@
                 "
                 media="(min-width: 1200px)"
                 />
-                <img src="./images/ourteam/olga-repina-270.jpg" alt="photo Ігор Дем'яненко">
+                <img class="team-item__img" src="./images/ourteam/olga-repina-270.jpg" alt="photo Ігор Дем'яненко">
             </picture>
             <div class="team-item__group">
             <h3 class="team-item__title">Ольга Рєпіна</h3>
@@ -239,7 +239,7 @@
             </div>
         </li>
         <li class="team-item">
-            <picture class="team-item__img">
+            <picture>
                 <source
                 srcset="
                 ./images/ourteam/mykola-tarasov-450.jpg 1x,
@@ -261,7 +261,7 @@
                 "
                 media="(min-width: 1200px)"
                 />
-                <img src="./images/ourteam/mykola-tarasov-270.jpg" alt="photo Ігор Дем'яненко">
+                <img class="team-item__img" src="./images/ourteam/mykola-tarasov-270.jpg" alt="photo Ігор Дем'яненко">
             </picture>
             <div class="team-item__group">
             <h3 class="team-item__title">Микола Тарасов</h3>
@@ -299,7 +299,7 @@
             </div>
         </li>
         <li class="team-item">
-            <picture class="team-item__img">
+            <picture >
                 <source
                 srcset="
                 ./images/ourteam/mykhailo-yermakov-450.jpg 1x,
@@ -321,7 +321,7 @@
                 "
                 media="(min-width: 1200px)"
                 />
-                <img src="./images/ourteam/mykhailo-yermakov-270.jpg" alt="photo Ігор Дем'яненко">
+                <img class="team-item__img" src="./images/ourteam/mykhailo-yermakov-270.jpg" alt="photo Ігор Дем'яненко">
             </picture>
             <div class="team-item__group">
             <h3 class="team-item__title">Михайло Єрмаков</h3>
@@ -412,10 +412,10 @@
 </section>
 </main>
 <footer class="footer">
+  <address>
     <div class="container">
         <div class="footer-contacts">
     <a href="./index.html" class="footer-logo"><span class="logo-web">Web</span>Studio</a>
-<address>
     <ul class="list footer-list">
         <li class="item"> <a class="footer-address" href="https://goo.gl/maps/qFheTiiu25KK1Bng9" target="_blank" rel="noopener noreferrel">м. Київ, пр-т Лесі Українки, 26</a></li>
         <li class="item"> <a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -469,7 +469,8 @@
             </button>
         </form>
      </div>
-</address>
+</div>
+  </address>
 </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">

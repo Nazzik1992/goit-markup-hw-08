@@ -4,7 +4,7 @@
     @include tablet-max {
         text-align: center;
         padding-top: 60px;
-    padding-bottom: 60px;
+        padding-bottom: 60px;
     }
   
   
@@ -171,9 +171,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    font-style: normal;
     text-transform: uppercase;
-     margin-bottom: 20px;
-     color: #FFFFFF;
+    margin-bottom: 20px;
+    color: #FFFFFF;
 }
 .form-write{
     @include desktop {
@@ -192,6 +193,10 @@
         outline: none;
         @include tablet-max {
             margin-bottom: 20px;
+        }
+
+        @include tablet {
+            width: 450px;
         }
         @include desktop {
             width: 358px;
