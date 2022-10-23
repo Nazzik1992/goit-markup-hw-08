@@ -167,7 +167,11 @@
     .item {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;}
+        gap: 0 30px;
+        @include tablet-max {
+            margin-bottom: 10px;
+        }
+        }
 
         @include desktop {
             margin-bottom: 0px;
@@ -259,7 +263,7 @@
             color: var(--link-color);
         }
     }
- .current{
+ .current-menu{
     color: var(--link-color);
     
  }
